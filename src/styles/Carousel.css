@@ -1,0 +1,157 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent padding and border behavior */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.btn {
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn i {
+  font-size: 2rem;
+}
+
+.btn-carrousel {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn-carrousel:hover {
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.fa-angle-left {
+  padding-right: .15rem;
+}
+
+.fa-angle-right {
+  padding-left: .15rem;
+}
+
+.carrousel {
+  margin: 1rem auto; /* Adds spacing above and below the carousel */
+  max-width: 720px; /* Adjust max-width to fit smaller screens */
+  height: auto; /* Reduce height to account for top and bottom margin */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2%; /* Increased padding for better mobile screen utilization */
+  box-sizing: border-box; /* Consistent box model */
+}
+
+.carrousel-item {
+  width: 100%;
+  display: none;
+}
+
+.carrousel-item-img {
+  border-radius: 1.5em;
+  width: 100%; /* Ensure images take full width on smaller screens */
+  height: auto; /* Keep the aspect ratio intact */
+}
+
+.carrousel-item-visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+.carrousel-actions {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  right: 3%;
+  transform: translateY(-50%);
+}
+
+/* ANIMATIONS */
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* General Media Queries for Mobile Responsiveness */
+
+/* Media Query for Screens Less Than 768px */
+@media (max-width: 768px) {
+  .carrousel {
+    max-width: 720px;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Adjust height for better mobile scaling */
+    margin: 2% auto; /* Reduce margin for better fitting */
+    padding: 2%; /* Add padding around the carousel for mobile screens */
+  }
+  
+  .carrousel-item-img {
+    width: 100%; /* Ensure images take full width on smaller screens */
+    height: auto; /* Keep the aspect ratio intact */
+  }
+  
+  .fa-angle-left,
+  .fa-angle-right {
+    font-size: 5vw; /* Scale the icon size using viewport width */
+  }
+  
+  .carrousel-actions {
+    top: 45%; /* Slightly adjust position of carousel buttons */
+    left: 3%;
+    right: 3%;
+  }
+
+  /* Header Text Sizes */
+  h1, h2 {
+    font-size: 6vw; /* Scale text size according to the screen width */
+  }
+}
+
+/* Media Query for Screens Less Than 480px (Very Small Screens) */
+@media (max-width: 480px) {
+  .carrousel {
+    max-width: 720px;
+    height: auto;
+    width: 100%;
+    margin: 2% auto; /* Adjust margin for very small screens */
+    padding: 3%; /* Increased padding around the carousel */
+  }
+
+  .carrousel-item-img {
+    width: 100%; /* Ensure images take full width on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .carrousel-actions {
+    top: 40%;
+    left: 2%;
+    right: 2%;
+  }
+
+  .fa-angle-left,
+  .fa-angle-right {
+    font-size: 7vw; /* Larger icon size for very small screens */
+  }
+
+
+  /* Header Text Sizes */
+  h1, h2 {
+    font-size: 8vw; /* Scaling text size more aggressively */
+  }
+}

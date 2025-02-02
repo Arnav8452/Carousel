@@ -1,0 +1,61 @@
+/* General Header Styling */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Left Container for Logo and City */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.city-name-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-align: left;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.city-name-button:hover {
+  color: #b30000;
+}
+
+/* Right Container for Search Icon */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-button {
+  background-color: transparent; /* Make background transparent */
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.25rem;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.search-button:hover {
+  color: #b30000; /* Change color on hover */
+}
+
+/* Additional style for search icon */
+.search-button svg {
+  font-size: 1.5rem;
+}

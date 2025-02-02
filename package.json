@@ -1,0 +1,51 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "homepage": "https://Arnav8452.github.io/Carousel",
+  "private": true,
+  "dependencies": {
+    "colorthief": "^2.6.0",
+    "cra-template": "1.2.0",
+    "embla-carousel": "^8.5.1",
+    "embla-carousel-autoplay": "^8.5.1",
+    "embla-carousel-react": "^8.5.1",
+    "firebase": "^11.1.0",
+    "gsap": "^3.12.5",
+    "react": "18.1",
+    "react-dom": "18.1",
+    "react-icons": "^5.4.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^4.2.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "gh-pages": "^6.3.0"
+  }
+}

@@ -1,0 +1,18 @@
+/* Footer Styling */
+.footer-container {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #090909;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Shadow on top for effect */
+    position: relative;
+    bottom: 0;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+  }
+  
+  .footer-container p {
+    font-size: 14px;
+    color: #666; /* Slightly darker text for contrast */
+    margin: 0;
+  }
+  
